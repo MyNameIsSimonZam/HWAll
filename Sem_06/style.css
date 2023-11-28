@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.center {
+    padding-left: calc(50% - 573px);
+    padding-right: calc(50% - 573px);
+}
+
+body {
+    display: flex;
+    /* justify-items: center; */
+    background-color: #020A18;
+    font-family: GilroyLight;
+    font-size: 18px;
+    color: white;
+    /* padding-left: 30px; */
+}
+ 
+h1, h2, h3, h4, h5, h6 {
+    font-family: GilroyBold;
+}
+
+.header {
+    border-radius: 10px;
+    padding: 39px 0;
+    background: linear-gradient(180deg,
+            rgba(255, 255, 255, 0.01),
+            rgba(255, 255, 255, 0.02));
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-size: 16px;
+}
+
+.link__menu {
+    text-decoration: none;
+    color: white;
+}
+
+.top__content {
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 128px;
+    margin-top: 160px;
+}
+
+.top__info {
+    width: 604px;
+}
+
+.text__h1 {
+    font-size: 55px;
+    margin-top: 10px;
+}
+
+.text__h3 {
+    color: #3A68B8;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.text__p {
+    margin-top: 40px;
+    line-height: 160%;
+    opacity: 0.7;
+}
+
+.top__bottons {
+    display: flex;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.butt1,
+.butt2 {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 5px;
+    border-color: #3A68B8;
+    border: 0;
+    background-color: #3A68B8;
+    color: white;
+    font-size: 20px;
+    padding: 0 30px;
+    height: 57px;
+    /* display: inline-flex;
+    padding: 15px 30px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 5px;
+    background: var(--3-a-68-b-8, #3a68b8);
+    color: var(--ffffff, #fff);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal; */
+}
+
+.butt2 {
+    display: inline-flex;
+    gap: 10px;
+}
+
+.top__logo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 71px;
+    margin-top: 212px;
+    
+}
+
+.top__logo img {
+    width: 200px;
+}
+
+@media (max-width: 1024px) {
+    .top__image {
+        /* display: none; */
+        width: 100%;
+        text-align: center;
+        padding-top: 128px;
+    }
+
+    .top__info {
+        width: 100%;
+    }
+
+    .center {
+        padding-left: 0;
+        padding-right: 0;
+        width: calc(100% - 80px);
+        margin: 0 auto;
+    }
+
+    .top__content {
+        display: block;
+    }
+
+    .top__logo {
+        /* display: none; */
+    }
+}
